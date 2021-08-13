@@ -1,17 +1,20 @@
 {
-  "name": "micro-frontends",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "webpack-moderation-example",
+  "private": true,
   "scripts": {
-    "start": "npm start --workspaces"
+    "start": "lerna run --parallel start",
+    "build": "lerna run build",
+    "serve": "lerna run --parallel serve",
+    "clean": "lerna run --parallel clean"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "workspaces": [
-    "shell",
-    "uno",
-    "dos"
-  ]
+  "workspaces": {
+    "packages": [
+      "shell",
+      "uno",
+      "dos"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
