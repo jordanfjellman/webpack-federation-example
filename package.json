@@ -1,0 +1,17 @@
+{
+  "name": "micro-frontends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start --workspaces"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "shell",
+    "uno",
+    "dos"
+  ]
+}
